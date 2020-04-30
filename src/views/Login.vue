@@ -67,11 +67,11 @@ export default {
   data() {
     return {
       usernameRules: [
-        { validate: (val) => !!val, message: '必须填写用户名' },
+        { validate: (val) => !!val, message: '必填写用户名' },
         { validate: (val) => val.length >= 3, message: '用户名长度大于3' }
       ],
       passwordRules: [
-        { validate: (val) => !!val, message: '必须填写密码' },
+        { validate: (val) => !!val, message: '必填写密码' },
         { validate: (val) => val.length >= 3 && val.length <= 10, message: '密码长度大于3小于10' }
       ],
       argeeRules: [{ validate: (val) => !!val, message: '必须同意用户协议' }],
